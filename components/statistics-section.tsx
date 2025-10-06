@@ -19,7 +19,7 @@ export function StatisticsSection({ className = "" }: StatisticsProps) {
   const stats = [
     {
       icon: <Code className="h-6 w-6 text-[#D4AF37]" />,
-      value: 50,
+      value: 20,
       label: "Projects Completed",
       suffix: "+",
       delay: 0,
@@ -40,16 +40,16 @@ export function StatisticsSection({ className = "" }: StatisticsProps) {
     },
     {
       icon: <Award className="h-6 w-6 text-[#D4AF37]" />,
-      value: 15,
+      value: 5,
       label: "Countries Served",
       suffix: "+",
       delay: 0.3,
     },
     {
       icon: <Clock className="h-6 w-6 text-[#D4AF37]" />,
-      value: 7,
+      value: 2,
       label: "Years Experience",
-      suffix: "+",
+      suffix: "",
       delay: 0.4,
     },
     {
