@@ -129,13 +129,15 @@ export function RecentProjectsSection() {
 
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">{project.description}</p>
 
-                <Link
-                  href={`/projects/${project.slug}`}
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-[#D4AF37] dark:text-[#D4AF37] hover:text-[#B87333] dark:hover:text-[#B87333] font-medium"
                 >
-                  View Details
-                  <ArrowRight size={16} className="ml-1" />
-                </Link>
+                  View Website
+                  <ExternalLink size={16} className="ml-1" />
+                </a>
               </div>
             </motion.div>
           ))}
