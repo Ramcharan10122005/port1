@@ -405,8 +405,8 @@ export default function ProjectsPageClient() {
                   />
                 </div>
 
-                <div className="flex gap-4">
-                  <div className="w-full md:w-48">
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="w-full sm:w-48">
                     <Tabs
                       value={selectedCategory === "all" ? "all" : "category"}
                       onValueChange={(value) => {
@@ -414,9 +414,9 @@ export default function ProjectsPageClient() {
                       }}
                       className="w-full"
                     >
-                      <TabsList className="w-full grid grid-cols-2">
-                        <TabsTrigger value="all">All Categories</TabsTrigger>
-                        <TabsTrigger value="category">By Category</TabsTrigger>
+                      <TabsList className="w-full grid grid-cols-2 bg-muted/20 rounded-full p-1 h-auto">
+                        <TabsTrigger className="w-full rounded-full" value="all">All Categories</TabsTrigger>
+                        <TabsTrigger className="w-full rounded-full" value="category">By Category</TabsTrigger>
                       </TabsList>
                     </Tabs>
 
@@ -433,7 +433,7 @@ export default function ProjectsPageClient() {
                     )}
                   </div>
 
-                  <div className="w-full md:w-48">
+                  <div className="w-full sm:w-48">
                     <Tabs
                       value={selectedTech === "all" ? "all" : "tech"}
                       onValueChange={(value) => {
@@ -442,8 +442,8 @@ export default function ProjectsPageClient() {
                       className="w-full"
                     >
                       <TabsList className="w-full grid grid-cols-2">
-                        <TabsTrigger value="all">All Tech</TabsTrigger>
-                        <TabsTrigger value="tech">By Tech</TabsTrigger>
+                        <TabsTrigger className="w-full" value="all">All Tech</TabsTrigger>
+                        <TabsTrigger className="w-full" value="tech">By Tech</TabsTrigger>
                       </TabsList>
                     </Tabs>
 
